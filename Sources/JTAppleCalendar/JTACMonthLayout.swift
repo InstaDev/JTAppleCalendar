@@ -350,7 +350,7 @@ class JTACMonthLayout: UICollectionViewLayout, JTACMonthLayoutProtocol {
             fallthrough
         default:
             let modifiedSize = (width: collectionView!.frame.width, height: headerHeight)
-            retval = (item, section, sectionInset.left, yCellOffset , modifiedSize.width - (sectionInset.left + sectionInset.right), modifiedSize.height)
+            retval = (item, section, 0, yCellOffset , modifiedSize.width, modifiedSize.height)
         }
         
         if retval?.width == 0, retval?.height == 0 {
