@@ -59,8 +59,8 @@ extension JTACMonthLayout {
                             // section && if we have headers
                             
                             xCellOffset = sectionInset.left
-                            yCellOffset += attribute.height
-                            contentHeight += attribute.height
+                            yCellOffset += attribute.height + minimumLineSpacing
+                            contentHeight += attribute.height + minimumLineSpacing
                             
                             if dayCounter == numberOfDaysInCurrentSection {
                                 yCellOffset   += sectionInset.top
